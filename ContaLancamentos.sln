@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conta.Domain", "Conta.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conta.Application", "Conta.Application\Conta.Application.csproj", "{59BAAC28-EF73-442E-A9DC-1BA60C82FDD2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conta.Api", "Conta.Api\Conta.Api.csproj", "{5C78081B-F8B9-4120-90DA-740CF5CA08D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conta.Presentation.Api", "Conta.Presentation.Api\Conta.Presentation.Api.csproj", "{5C78081B-F8B9-4120-90DA-740CF5CA08D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conta.Test", "Conta.Test\Conta.Test.csproj", "{456FDD7F-80A3-4317-A255-2B3962A88688}"
 EndProject

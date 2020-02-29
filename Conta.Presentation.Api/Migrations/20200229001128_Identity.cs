@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Conta.Api.Migrations
+namespace Conta.Presentation.Api.Migrations
 {
     public partial class Identity : Migration
     {

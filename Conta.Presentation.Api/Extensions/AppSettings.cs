@@ -1,6 +1,6 @@
 ﻿
 
-namespace Conta.Api.Extensions
+namespace Conta.Presentation.Api.Extensions
 {
     public class AppSettings
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Conta.Api.Data
+namespace Conta.Presentation.Api.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

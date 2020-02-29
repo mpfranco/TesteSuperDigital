@@ -1,5 +1,5 @@
-﻿using Conta.Api.Data;
-using Conta.Api.Extensions;
+﻿using Conta.Presentation.Api.Data;
+using Conta.Presentation.Api.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 
-namespace Conta.Api.Configuration
+namespace Conta.Presentation.Api.Configuration
 {
     public static class IdentityConfig
     {

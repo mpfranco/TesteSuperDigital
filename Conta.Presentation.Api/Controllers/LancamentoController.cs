@@ -1,22 +1,25 @@
 ﻿using System;
-using Conta.Api.Extensions;
+using Conta.Presentation.Api.Extensions;
 using Conta.Application.Interfaces;
 using Conta.Application.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Conta.Api.Controllers
+namespace Conta.Presentation.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class ContaCorrenteController : ControllerBase
+    public class LancamentoController : ControllerBase
     {
-        private readonly IApplicationContaCorrente app;
-        public ContaCorrenteController(IApplicationContaCorrente _app)
+        private readonly IApplicationLancamento app;        
+        public LancamentoController(IApplicationLancamento _app)
         {
             app = _app;
         }
+
         
-        [ClaimsAuthorize("ContaCorrente", "Listar")]
+        [ClaimsAuthorize("Lancamento", "Listar")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -30,9 +33,9 @@ namespace Conta.Api.Controllers
             }
         }
 
-        [ClaimsAuthorize("ContaCorrente", "Adicionar")]
+        [ClaimsAuthorize("Lancamento", "Adicionar")]
         [HttpPost]
-        public IActionResult Post([FromBody] ContaCorrenteViewModel model)
+        public IActionResult Post([FromBody] LancamentoViewModel model)
         {
             try
             {
@@ -43,5 +46,8 @@ namespace Conta.Api.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+
     }
 }

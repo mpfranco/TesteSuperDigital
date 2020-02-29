@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace Conta.Api.ViewModels
+namespace Conta.Presentation.Api.ViewModels
 {
     public class UserTokenViewModel
     {

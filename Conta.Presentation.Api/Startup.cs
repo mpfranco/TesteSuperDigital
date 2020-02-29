@@ -1,4 +1,4 @@
-﻿using Conta.Api.Configuration;
+﻿using Conta.Presentation.Api.Configuration;
 using Conta.Infra.CrossCutting.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

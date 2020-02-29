@@ -1,5 +1,5 @@
 ﻿
-namespace Conta.Api.ViewModels
+namespace Conta.Presentation.Api.ViewModels
 {
     public class LoginResponseViewModel
     {

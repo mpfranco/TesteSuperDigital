@@ -1,53 +1,52 @@
 ﻿using System;
-using Conta.Api.Extensions;
+using System.Collections.Generic;
+using Conta.Presentation.Api.Extensions;
 using Conta.Application.Interfaces;
 using Conta.Application.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Conta.Api.Controllers
+namespace Conta.Presentation.Api.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class LancamentoController : ControllerBase
+    public class ClientesController : ControllerBase
     {
-        private readonly IApplicationLancamento app;        
-        public LancamentoController(IApplicationLancamento _app)
+        private readonly IApplicationCliente app;
+
+        public ClientesController(IApplicationCliente _app)
         {
             app = _app;
         }
 
-        
-        [ClaimsAuthorize("Lancamento", "Listar")]
+        [ClaimsAuthorize("Cliente", "Listar")]
         [HttpGet]
-        public IActionResult Get()
+        public ActionResult<IEnumerable<string>> Get()
         {
             try
             {
                 return Ok(app.GetAll());
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 return BadRequest(ex.Message);
             }
+            
         }
-
-        [ClaimsAuthorize("Lancamento", "Adicionar")]
+      
+        [ClaimsAuthorize("Cliente", "Adicionar")]
         [HttpPost]
-        public IActionResult Post([FromBody] LancamentoViewModel model)
+        public IActionResult Post([FromBody] ClienteViewModel cliente)
         {
             try
             {
-                return Ok(app.Add(model));
+                return Ok(app.Add(cliente));
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-        }
-
-
-
+        }             
     }
 }

@@ -5,14 +5,14 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using Conta.Api.Extensions;
-using Conta.Api.ViewModels;
+using Conta.Presentation.Api.Extensions;
+using Conta.Presentation.Api.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Conta.Api.Controllers
+namespace Conta.Presentation.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
