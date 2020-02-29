@@ -1,0 +1,20 @@
+1) EXPLIQUE COM SUAS PALAVRAS O QUE É DOMAIN DRIVEN DESIGN E SUA IMPORTÂNCIA
+NA ESTRATÉGIA DE DESENVOLVIMENTO DE SOFTWARE.
+
+	DDD é um padrão para desenvolvimento de software que visa como principal abordagem o domínio do negócio, criando assim seus padrões visando facilitar o desenvolvimento de aplicações complexas ou não, dividindo as responsabilidades em contextos menores para facilidade no entendimento e implementação.
+	Este padrão de desenvolvimento visa também a facilidade e clareza na comunicação de toda a equipe desde o responsável por conhecer toda a regra de negócio até chegar no desenvolvedor que vai implementar todo esse contexto e garantir que todas as regras e premissas serão implementadas.
+
+2) EXPLIQUE COM SUAS PALAVRAS O QUE É E COMO FUNCIONA UMA ARQUITETURA BASEADA
+EM MICROSERVICES. EXPLIQUE GANHOS COM ESTE MODELO E DESAFIOS EM SUA
+IMPLEMENTAÇÃO.
+
+	Arquitetura em micro serviços visa fragmentar serviços complexos em pequenas partes, ou seja, tem por finalidade ser específico em cada funcionalidade por menor que ela seja, deve ser avaliado se a mesma pode ser separada em um micro serviço para uma melhor abordagem e posterior manutenção. 
+	Utilizando essa arquitetura é notável muitos ganhos e um dos principais seria a utilização de uma tecnologia específica para um determinado micro serviço.
+	Um dos grandes desafios dessa arquitetura é garantir que todos os micro serviços rodem em perfeita harmonia, ou seja, caso uma transação dependente de outra gere algum erro todo aquele processo deve ser retrocedido.
+
+3) EXPLIQUE QUAL A DIFERENÇA ENTRE COMUNICAÇÃO SINCRONA E ASSINCRONA E QUAL O
+MELHOR CENÁRIO PARA UTILIZAR UMA OU OUTRA.
+
+	Comunicação síncrona é o tipo de requisição que permanecemos conectados aguardando seu retorno, assíncrona faz totalmente o oposto, não é necessário se aguardar essa resposta, podemos tratar este retorno posteriormente através de mensageria por exemplo.
+	Síncrona é mais utilizado em casos que o retorno precisa ser imediato como um pagamento de uma conta com cartão de débito por exemplo.
+	Assíncrona é mais utilizado quando temos que executar um processamento em lote por exemplo e podemos ter essa tratativa de sucesso ou falha posteriormente.
