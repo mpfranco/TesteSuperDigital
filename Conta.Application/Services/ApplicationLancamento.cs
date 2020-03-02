@@ -5,7 +5,7 @@ using Conta.Application.ViewModels;
 using Conta.Domain.Entities;
 using Conta.Domain.Interfaces.IServices;
 using Conta.Infra.Data.Interfaces;
-using DandS.Application.Models.Enum;
+using Conta.Application.Models.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;

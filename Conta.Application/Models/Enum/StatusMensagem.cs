@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DandS.Application.Models.Enum
+namespace Conta.Application.Models.Enum
 {
     public enum StatusMensagem
     {
